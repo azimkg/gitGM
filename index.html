@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Привозим авто из Южной Кореи</title>
+		<link
+			rel="stylesheet"
+			href="/style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+			rel="stylesheet" />
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet" />
+		<link
+			rel="icon"
+			href="/images/logo.png"
+			type="image/png" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+		<style>
+			.slick-prev, .slick-next {
+			  background-color: #1F2937; /* Tailwind gray-800 */
+			  border-radius: 50%;
+			  padding: 0.5rem;
+			}
+			.slick-prev:before, .slick-next:before {
+			  color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<header
+			class="w-full h-[326px] sm:h-[544px] md:h-[70vh] lg:h-[100vh] xl:h-[100vh] xl:h-[120vh]  relative z-10 bg-none roundedB"
+			style="background-image: url(/images/bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+			<div
+				class="w-full h-full absolute top-0 left-0 roundedB"
+				style="background-color: rgba(0, 0, 0, 0.1);"></div>
+			<div
+				class="h-[68px] md:h-[90px] lg:h-[112px] xl:h-[150px] containers flex justify-between items-center animated-box relative z-10">
+				<a href="">
+					<img
+						class="w-[46px] sm:w-[56px] md:w-[75px] xl:w-[100px] h-[38px] sm:h-[60px] md:h-[82px] xl:h-[100px]"
+						src="/images/log.svg"
+						alt="Logo" />
+				</a>
+				<ul
+					class="hidden lg:flex items-center lg:text-base 2xl:text-xl font-semibold text-white lg:gap-2 xl:gap-8 nav_list">
+					<li class="">
+						<a href="">Главная</a>
+					</li>
+					<li class="">
+						<a href="#send">Автомобили в наличии</a>
+					</li>
+					<li class="">
+						<a href="#aboutus">О нас</a>
+					</li>
+					<li class="">
+						<a href="#contacts">Контакты</a>
+					</li>
+					<li class="">
+						<a href="#quations"
+							>Часто задаваемые вопросы</a
+						>
+					</li>
+				</ul>
+				<button
+					id="openBurger"
+					class="block lg:hidden">
+					<img
+						class="w-[36px] sm:w-[48px] h-[36px] sm:h-[48px]"
+						src="/images/menu.svg"
+						alt="Menu" />
+				</button>
+			</div>
+			<div
+				class="containers flex items-start justify-center h-[30vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] relative z-10 flex-col gap-10">
+				<h2
+					class="text-3xl sm:text-[36px] md:text-[44px] lg:text-[60px] xl:text-[80px] font-semibold text-white show_text">
+					Привозим авто <br />
+					из Южной Кореи
+				</h2>
+				<p
+					class="text-lg sm:text-[22px] md:text-[26px] lg:text-[34px] xl:text-[40px] font-medium text-white show_text2">
+					Качество на колесах,<br />
+					надежность в пути!
+				</p>
+				<div class="flex items-center gap-10">
+					<button
+						class="bg-[#C11800] rounded-2xl text-white h-[61px] px-10 text-lg font-medium flex items-center gap-2 hover:text-[#C11800] hover:bg-white">
+						Узнать подробнее
+						<svg
+							width="24"
+							height="25"
+							viewBox="0 0 24 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10 16.5L14 12.5L10 8.5"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</button>
+					<button
+						class=" rounded-2xl text-white h-[61px] px-10 text-lg border border-white/40 hover:border-white/80 hover:text-white/80 font-medium flex items-center gap-2">
+						<svg
+							width="24"
+							height="25"
+							viewBox="0 0 24 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.8501 15H14.1501"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M8 11.75H16"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M9.8501 8.5H14.1501"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M20.9999 11.791C20.9999 16.33 16.9519 19.973 11.9999 19.973C11.3589 19.973 10.7349 19.91 10.1309 19.794"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M6.599 18.326C4.42 16.836 3 14.474 3 11.791"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M6.59876 18.3262C6.59776 19.1802 6.59976 20.3322 6.59976 21.5412"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M3 11.7914C3 7.25235 7.048 3.61035 12 3.61035C16.952 3.61035 21 7.25335 21 11.7924"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M10.1301 19.79L6.6001 21.54"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+						Консультация
+					</button>
+				</div>
+			</div>
+			<div
+				id="burger"
+				class="absolute w-full h-full bg-black/10 top-0 left-0 flex justify-end items-start p-5 hidden">
+				<div>
+					<div
+						id="blockBeurger"
+						class="bg-white p-5 rounded-xl relative w-[245px] z-50">
+						<button
+							id="closeBurger"
+							class="absolute top-4 left-5">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.0001 8C12.0001 8 20 13.8919 20 16.0001C20 18.1082 12 24 12 24"
+									stroke="black"
+									stroke-width="1.06667"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</button>
+						<p class="text-center font-bold">Разделы</p>
+						<div
+							class="flex flex-col font-medium gap-5 mt-5">
+							<a href="">Главная</a>
+							<a href="#send">Автомобили в наличии</a>
+							<a href="#aboutus">О нас</a>
+							<a href="#contacts">Контакты</a>
+							<a href="#quations"
+								>Часто задаваемые вопросы</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section
+			class="mt-7 md:mt-10 lg:mt-10 w-full overflow-hidden bg-white">
+			<div class="py-7 md:py-10 lg:py-20 bg-white">
+				<div
+					class="containers"
+					id="aboutus">
+					<h2
+						class="text-xl sm:text-[28px] md:text-[36px] lg:text-[42px] font-semibold mb-5 md:mb-7 lg:mb-10">
+						О нас
+					</h2>
+					<div
+						class="flex items-start gap-5 lg:gap-10 flex-col lg:flex-row ">
+						<p
+							class="text-sm sm:text-base md:text-lg lg:text-[24px] w-full h-full font-medium">
+							Наша компания специализируется на
+							безупречной доставке автомобилей из Южной
+							Кореи в любую точку мира. Мы предлагаем
+							надежные и эффективные решения для всех
+							ваших потребностей в международной
+							автодоставке. Наша команда профессионалов
+							обеспечит вас высококачественным сервисом с
+							начала до конца процесса доставки. Доверьте
+							нам вашу мечту о новом автомобиле из Южной
+							Кореи, и мы сделаем всё возможное, чтобы
+							она стала реальностью.
+							<br />
+							<br />
+							Наша миссия - сделать ваше автомобильное
+							приобретение из Южной Кореи легким,
+							безопасным и приятным. Доверьтесь нам, и вы
+							получите не только вашу машину, но и
+							надежного партнера, на которого можно
+							полагаться в мире автомобилей.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div
+				class="py-7 md:py-10 lg:py-20 bg-white containers">
+				<h2
+					class="text-[44px] font-semibold text-[#C11800] mb-10">
+					Лучшие предложения
+				</h2>
+				<div class="menu">
+					<div class="menu--wrapper flex gap-10 ">
+						<div
+							class="rounded-xl shadow-xl w-[440px] overflow-hidden menu--item">
+							<div
+								class="f-carousel h-[230px]"
+								id="myCarousel">
+								<img
+									class="f-carousel__slide object-cover"
+									src="/images/cars.jpeg"
+									alt="" />
+								<img
+									class="f-carousel__slide object-cover"
+									src="/images/car1.jpg"
+									alt="" />
+								<img
+									class="f-carousel__slide object-cover"
+									src="/images/car2.jpg"
+									alt="" />
+							</div>
+							<div class="p-8 flex flex-col gap-6">
+								<h2
+									class="text-[22px] text-[#191A1B] font-medium">
+									Peugeot e-2008 Electric
+								</h2>
+								<div
+									class="flex items-center justify-between">
+									<span class="text-[#191A1B] "
+										>Sedan</span
+									>
+									<span
+										class="bg-[#F7F7F7] p-2 rounded-lg poppins-medium flex items-center gap-3"
+										><span
+											class="poppins-medium text-[#444444] line-through"
+											>43 793 $</span
+										><span
+											class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
+											>40 000 $</span
+										></span
+									>
+								</div>
+								<div class="flex flex-col gap-3">
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Дата регистрации :
+										</span>
+										<span>12.12.2024</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Пробег :</span
+										>
+										<span>45 km</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Мощность :</span
+										>
+										<span>345 KW (469 PS)</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Коробка :</span
+										>
+										<span>Automatic</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Топливо :</span
+										>
+										<span>Бензин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="rounded-xl shadow-xl w-[440px] overflow-hidden menu--item">
+							<div
+								class="f-carousel h-[230px]"
+								id="myCarousel2">
+								<img
+									class="f-carousel__slide object-cover"
+									src="/images/cars.jpeg"
+									alt="" />
+								<img
+									class="f-carousel__slide object-cover"
+									src="/images/car1.jpg"
+									alt="" />
+								<img
+									class="f-carousel__slide object-cover"
+									src="/images/car2.jpg"
+									alt="" />
+							</div>
+							<div class="p-8 flex flex-col gap-6">
+								<h2
+									class="text-[22px] text-[#191A1B] font-medium">
+									Peugeot e-2008 Electric
+								</h2>
+								<div
+									class="flex items-center justify-between">
+									<span class="text-[#191A1B] "
+										>Sedan</span
+									>
+									<span
+										class="bg-[#F7F7F7] p-2 rounded-lg poppins-medium flex items-center gap-3"
+										><span
+											class="poppins-medium text-[#444444] line-through"
+											>43 793 $</span
+										><span
+											class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
+											>40 000 $</span
+										></span
+									>
+								</div>
+								<div class="flex flex-col gap-3">
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Дата регистрации :
+										</span>
+										<span>12.12.2024</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Пробег :</span
+										>
+										<span>45 km</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Мощность :</span
+										>
+										<span>345 KW (469 PS)</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Коробка :</span
+										>
+										<span>Automatic</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Топливо :</span
+										>
+										<span>Бензин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="rounded-xl shadow-xl w-[440px] overflow-hidden menu--item">
+							<div
+								class="f-carousel h-[230px]"
+								id="myCarousels">
+								<img
+									class="f-carousel__slide object-cover"
+									src="/images/cars.jpeg"
+									alt="" />
+								<img
+									class="f-carousel__slide object-cover"
+									src="/images/car1.jpg"
+									alt="" />
+								<img
+									class="f-carousel__slide object-cover"
+									src="/images/car2.jpg"
+									alt="" />
+							</div>
+							<div class="p-8 flex flex-col gap-6">
+								<h2
+									class="text-[22px] text-[#191A1B] font-medium">
+									Peugeot e-2008 Electric
+								</h2>
+								<div
+									class="flex items-center justify-between">
+									<span class="text-[#191A1B] "
+										>Sedan</span
+									>
+									<span
+										class="bg-[#F7F7F7] p-2 rounded-lg poppins-medium flex items-center gap-3"
+										><span
+											class="poppins-medium text-[#444444] line-through"
+											>43 793 $</span
+										><span
+											class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
+											>40 000 $</span
+										></span
+									>
+								</div>
+								<div class="flex flex-col gap-3">
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Дата регистрации :
+										</span>
+										<span>12.12.2024</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Пробег :</span
+										>
+										<span>45 km</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Мощность :</span
+										>
+										<span>345 KW (469 PS)</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Коробка :</span
+										>
+										<span>Automatic</span>
+									</div>
+									<div
+										class="text-lg flex items-center justify-between">
+										<span class="font-semibold text-lg"
+											>Топливо :</span
+										>
+										<span>Бензин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="py-5 md:py-7 lg:py-10 my-7 md:my-10 bg-[#F1F1F1] containers rounded-2xl">
+				<div
+					class="flex justify-between items-center px-16">
+					<div
+						class="flex justify-between items-center flex-col md:flex-row w-full">
+						<img
+							class="w-[105px] md:w-[179px] h-[55px] md:h-[86px] lg:w-[243px] lg:h-[116px]"
+							src="/images/утсфк.svg"
+							alt="IMAGE" />
+						<div
+							class="flex flex-col items-center md:m-4 gap-5 lg:gap-10 justify-between">
+							<h2
+								class="text-sm sm:text-lg md:text-xl lg:text-[24px] font-medium text-center">
+								Большой каталог автомобилей из Кореи
+							</h2>
+							<a
+								target="_blank"
+								href="https://car.encar.com/"
+								class="h-[50px] w-[310px] sm:w-[400px]  bg-[#C11800] flex items-center justify-center text-white text-sm sm:text-lg md:text-xl font-medium rounded-xl hover:bg-white shadow-xl hover:shadow-2xl hover:text-[#FF0032] hover:border"
+								>Смотреть полный каталог</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=" overflow-hidden">
+				<div class="">
+					<h2
+						class="text-xl containers sm:text-[28px] md:text-[34px] lg:text-[38px] font-semibold text-start mt-5 md:mt-0 mb-2 md:mb-5">
+						Наша команда
+					</h2>
+					<div
+						class="relative flex items-center gap-10"
+						id="testimonial-carousel">
+						<div
+							style="display: flex;"
+							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							<img
+								style="border-radius: 20px !important;"
+								class="h-full object-contain"
+								src="/images/1.jpg"
+								alt="" />
+							<div
+								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3 class="font-semibold text-2xl">
+									John Doe
+								</h3>
+								<p class="font-medium">Директор</p>
+							</div>
+						</div>
+						<div
+							style="display: flex;"
+							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							<img
+								style="border-radius: 20px !important;"
+								class="h-full object-contain"
+								src="/images/1.jpg"
+								alt="" />
+							<div
+								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3 class="font-semibold text-2xl">
+									John Doe
+								</h3>
+								<p class="font-medium">Директор</p>
+							</div>
+						</div>
+						<div
+							style="display: flex;"
+							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							<img
+								style="border-radius: 20px !important;"
+								class="h-full object-contain"
+								src="/images/1.jpg"
+								alt="" />
+							<div
+								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3 class="font-semibold text-2xl">
+									John Doe
+								</h3>
+								<p class="font-medium">Директор</p>
+							</div>
+						</div>
+						<div
+							style="display: flex;"
+							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							<img
+								style="border-radius: 20px !important;"
+								class="h-full object-contain"
+								src="/images/1.jpg"
+								alt="" />
+							<div
+								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3 class="font-semibold text-2xl">
+									John Doe
+								</h3>
+								<p class="font-medium">Директор</p>
+							</div>
+						</div>
+						<div
+							style="display: flex;"
+							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							<img
+								style="border-radius: 20px !important;"
+								class="h-full object-contain"
+								src="/images/1.jpg"
+								alt="" />
+							<div
+								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3 class="font-semibold text-2xl">
+									John Doe
+								</h3>
+								<p class="font-medium">Директор</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="py-5 md:py-7 lg:py-10 bg-white">
+				<div class="containers overflow-hidden">
+					<div class="">
+						<h2
+							class="text-xl sm:text-[28px] md:text-[34px] lg:text-[38px] font-semibold text-start mt-5 md:mt-0 mb-2 md:mb-5">
+							Отзывы
+						</h2>
+						<div
+							class="relative overflow-hidden"
+							id="testimonial-carousels">
+							<div class="p-2 md:p-6">
+								<div
+									class="h-[224px] md:h-[400px] flex flex-col gap-5 p-5 bg-[#EFEFEF] rounded-lg shadow-md">
+									<img
+										src="/images/kovy.svg"
+										class="w-[49px]"
+										alt="IMAGE" />
+									<p class="text-sm md:text-base">
+										Наша компания сотрудничает с GM уже
+										более двух лет, и мы всегда довольны
+										качеством предоставляемых услуг.
+									</p>
+									<p
+										class="text-base md:text-lg font-semibold">
+										Igor T., Иркутск, Россия
+									</p>
+								</div>
+							</div>
+							<div class="p-2 md:p-6">
+								<div
+									class="h-[224px] md:h-[400px] flex flex-col gap-5 p-5 bg-[#EFEFEF] rounded-lg shadow-md">
+									<img
+										src="/images/kovy.svg"
+										class="w-[49px]"
+										alt="IMAGE" />
+									<p class="text-sm md:text-base">
+										Подбор выполнили быстро, получил свой
+										Hyundai Tucson в идеальном состоянии.
+										Спасибо за оперативность и помощь с
+										оформлением
+									</p>
+									<p
+										class="text-base md:text-lg font-semibold">
+										Данияр, Астана, Казахстан
+									</p>
+								</div>
+							</div>
+							<div class="p-2 md:p-6">
+								<div
+									class="h-[224px] md:h-[400px] flex flex-col gap-5 p-5 bg-[#EFEFEF] rounded-lg shadow-md">
+									<img
+										src="/images/kovy.svg"
+										class="w-[49px]"
+										alt="IMAGE" />
+									<p class="text-sm md:text-base">
+										Была небольшая задержка с контейнером,
+										но все равно дошла машина в идеале,
+										Рахмет
+									</p>
+									<p
+										class="text-base md:text-lg font-semibold">
+										Jordan, Астана
+									</p>
+								</div>
+							</div>
+							<div class="p-2 md:p-6">
+								<div
+									class="h-[224px] md:h-[400px] flex flex-col gap-5 p-5 bg-[#EFEFEF] rounded-lg shadow-md">
+									<img
+										src="/images/kovy.svg"
+										class="w-[49px]"
+										alt="IMAGE" />
+									<p class="text-sm md:text-base">
+										Автомобиль прибыл без задержек и в
+										отличном состоянии. Спасибо за вашу
+										работу! Заказывали Bmw 320i
+									</p>
+									<p
+										class="text-base md:text-lg font-semibold">
+										Марк Соболь, Москва
+									</p>
+								</div>
+							</div>
+							<div class="p-2 md:p-6">
+								<div
+									class="h-[224px] md:h-[400px] flex flex-col gap-5 p-5 bg-[#EFEFEF] rounded-lg shadow-md">
+									<img
+										src="/images/kovy.svg"
+										class="w-[49px]"
+										alt="IMAGE" />
+									<p class="text-sm md:text-base">
+										Чоң рахмат, машинаны алдым, ата-энем
+										үчүн алган болчум, абдан жакты.
+									</p>
+									<p
+										class="text-base md:text-lg font-semibold">
+										Bahtiyar, Кыргызстан
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="containers py-7 md:py-10 lg:py-20"
+				id="contacts">
+				<h2
+					class="text-xl sm:text-[28px] md:text-[34px] lg:text-[38px] font-semibold text-start mb-5 md:mb-8">
+					Контакты
+				</h2>
+				<div
+					class="flex justify-between gap-5 lg:gap-0 flex-col lg:flex-row">
+					<div class="flex flex-wrap gap-5 lg:gap-8">
+						<div
+							class="bg-[#F1F1F1] w-full md:w-[48.5%] lg:w-[45%] p-4 rounded-md flex items-start gap-4">
+							<svg
+								width="28"
+								height="29"
+								viewBox="0 0 28 29"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15.8864 25.4278C15.3804 25.9015 14.7041 26.1663 14.0003 26.1663C13.2965 26.1663 12.6202 25.9015 12.1143 25.4278C7.48088 21.0633 1.27158 16.1877 4.29967 9.10928C5.93693 5.28202 9.86709 2.83301 14.0003 2.83301C18.1336 2.83301 22.0637 5.28202 23.701 9.10928C26.7253 16.1788 20.5312 21.0784 15.8864 25.4278Z"
+									stroke="black"
+									stroke-width="1.0814" />
+								<path
+									d="M18.0827 13.3333C18.0827 15.5885 16.2545 17.4167 13.9993 17.4167C11.7442 17.4167 9.91602 15.5885 9.91602 13.3333C9.91602 11.0782 11.7442 9.25 13.9993 9.25C16.2545 9.25 18.0827 11.0782 18.0827 13.3333Z"
+									stroke="black"
+									stroke-width="1.0814" />
+							</svg>
+							<div>
+								<h3
+									class="text-lg md:text-xl font-medium">
+									Адрес
+								</h3>
+								<p class="text-sm md:text-base">
+									240, Chukhang-daero, Jung-gu, Incheon
+								</p>
+							</div>
+						</div>
+						<div
+							class="bg-[#F1F1F1] w-full md:w-[48.5%] lg:w-[45%] p-4 rounded-md flex items-start gap-4">
+							<svg
+								width="28"
+								height="29"
+								viewBox="0 0 28 29"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.833 7.49951L24.4997 7.49951"
+									stroke="black"
+									stroke-width="1.0814"
+									stroke-linecap="round" />
+								<path
+									d="M12.833 14.5L24.4997 14.5"
+									stroke="black"
+									stroke-width="1.0814"
+									stroke-linecap="round" />
+								<path
+									d="M12.833 21.4995L24.4997 21.4995"
+									stroke="black"
+									stroke-width="1.0814"
+									stroke-linecap="round" />
+								<path
+									d="M3.5 9.12484C3.5 9.12484 4.66667 9.88527 5.25 10.9998C5.25 10.9998 7 6.62484 9.33333 5.1665"
+									stroke="black"
+									stroke-width="1.0814"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M3.5 21.9583C3.5 21.9583 4.66667 22.7188 5.25 23.8333C5.25 23.8333 7 19.4583 9.33333 18"
+									stroke="black"
+									stroke-width="1.0814"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							<div>
+								<h3
+									class="text-lg md:text-xl font-medium">
+									Рабочий график
+								</h3>
+								<p class="text-sm md:text-base">
+									Понедельник - Суббота:9:00 - 18:00 (время
+									Республика Корея)
+								</p>
+							</div>
+						</div>
+						<div
+							class="bg-[#F1F1F1] w-full md:w-[48.5%] lg:w-[45%] p-4 rounded-md flex items-start gap-4">
+							<svg
+								width="28"
+								height="29"
+								viewBox="0 0 28 29"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M5.53142 17.2638L7.81007 15.6457C8.45284 15.1892 9.10454 14.8834 9.84804 14.6854C10.7017 14.4581 11.0843 13.9922 11.0843 12.9967C11.0843 10.4712 16.9176 10.2024 16.9176 12.9967C16.9176 13.9922 17.3003 14.4581 18.1539 14.6854C18.9034 14.8849 19.5542 15.1928 20.1919 15.6457L22.4705 17.2638C23.5016 17.996 23.9815 18.3499 24.2492 18.9127C24.501 19.4422 24.501 20.0631 24.501 21.305C24.501 23.5376 24.501 24.654 23.8759 25.3696C23.1187 26.2364 21.1503 26.1619 19.9413 26.1619H8.06069C6.8516 26.1619 4.92325 26.2821 4.12608 25.3696C3.50098 24.654 3.50098 23.5376 3.50098 21.305C3.50098 20.0631 3.50098 19.4422 3.75279 18.9127C4.02045 18.3499 4.50037 17.996 5.53142 17.2638Z"
+									stroke="black"
+									stroke-width="1.0814" />
+								<path
+									d="M16.3337 20.3338C16.3337 21.6225 15.289 22.6672 14.0003 22.6672C12.7117 22.6672 11.667 21.6225 11.667 20.3338C11.667 19.0452 12.7117 18.0005 14.0003 18.0005C15.289 18.0005 16.3337 19.0452 16.3337 20.3338Z"
+									stroke="black"
+									stroke-width="1.0814" />
+								<path
+									d="M8.12082 4.8145C6.58264 5.25366 5.4768 5.79846 4.46484 6.4558C2.8627 7.49652 2.17582 9.37187 2.3644 11.1815C2.4441 11.9463 3.05807 12.312 3.77002 12.1141C4.31092 11.9638 4.85268 11.8175 5.39019 11.6581C6.96222 11.1918 7.33197 10.625 7.55044 9.01581L8.12082 4.8145ZM8.12082 4.8145C11.9223 3.72915 16.079 3.72915 19.8805 4.8145M19.8805 4.8145C21.4187 5.25366 22.5245 5.79846 23.5365 6.4558C25.1386 7.49652 25.8255 9.37187 25.6369 11.1815C25.5572 11.9463 24.9432 12.312 24.2313 12.1141C23.6904 11.9638 23.1486 11.8175 22.6111 11.6581C21.0391 11.1918 20.6693 10.625 20.4509 9.01581L19.8805 4.8145Z"
+									stroke="black"
+									stroke-width="1.0814"
+									stroke-linejoin="round" />
+							</svg>
+							<div>
+								<h3
+									class="text-lg md:text-xl font-medium">
+									Контакты
+								</h3>
+								<p class="text-sm md:text-base">
+									+82 10-7620-2070 Евгений (whatsApp)
+								</p>
+							</div>
+						</div>
+					</div>
+					<img
+						src="/images/abs.jpg"
+						class="w-full lg:w-[406px] object-contain rounded-md"
+						alt="IMAGE" />
+				</div>
+			</div>
+			<div
+				class="py-7 md:py-10 lg:py-[100px] bg-black">
+				<div
+					class="containers"
+					id="quations">
+					<h2
+						class="text-xl sm:text-[28px] md:text-[34px] lg:text-[38px] font-semibold text-start mb-5 md:mb-8 text-white">
+						Часто задаваемые вопросы
+					</h2>
+					<div>
+						<div
+							class="flex flex-col gap-10 text-white">
+							<div>
+								<div
+									class="flex justify-between items-center border-b pb-3 md:pb-5">
+									<h3
+										class="text-base sm:text-lg md:text-[22px] font-semibold">
+										Сколько времени занимает доставка
+										автомобиля из Южной Кореи?
+									</h3>
+									<button id="openText">
+										<img
+											id="tiggleImg"
+											class="min-w-[30px] min-h-[30px] w-[30px] opacity-90"
+											src="/images/plus.svg"
+											alt="open" />
+									</button>
+								</div>
+								<p
+									id="text"
+									class="text-sm md:text-base mt-2 md:mt-4 hidden hiddens mx-4">
+									Время доставки может варьироваться в
+									зависимости от страны назначения, но в
+									среднем занимает от 4 до 8 недель.
+								</p>
+							</div>
+							<div>
+								<div
+									class="flex justify-between items-center border-b pb-3 md:pb-5">
+									<h3
+										class="text-base sm:text-lg md:text-[22px] font-semibold">
+										Как происходит оплата?
+									</h3>
+									<button id="openText1">
+										<img
+											id="tiggleImg2"
+											class="min-w-[30px] min-h-[30px] w-[30px] opacity-90"
+											src="/images/plus.svg"
+											alt="open" />
+									</button>
+								</div>
+								<p
+									id="text1"
+									class="text-sm md:text-base mt-2 md:mt-4 hidden hiddens mx-4">
+									Основной вариант оплаты - это официальные
+									банковские переводы инвойсом.
+								</p>
+							</div>
+							<div>
+								<div
+									class="flex justify-between items-center border-b pb-3 md:pb-5">
+									<h3
+										class="text-base sm:text-lg md:text-[22px] font-semibold">
+										Какие автомобили вы можете предложить?
+									</h3>
+									<button id="openText2">
+										<img
+											id="tiggleImg3"
+											class="min-w-[30px] min-h-[30px] w-[30px] opacity-90"
+											src="/images/plus.svg"
+											alt="open" />
+									</button>
+								</div>
+								<p
+									id="text2"
+									class="text-sm md:text-base mt-2 md:mt-4 hidden hiddens mx-4">
+									Мы предлагаем широкий ассортимент
+									автомобилей различных марок и моделей,
+									включая новые и подержанные автомобили.
+									Корейский рынок богат не только
+									автомобилями отечественных марок
+									(Hyundai, Kia, Genesis и др.), но и
+									предлагает большой ассортимент
+									Европейских, Японских и Американских
+									марок автомобилей.
+								</p>
+							</div>
+							<div>
+								<div
+									class="flex justify-between items-center border-b pb-3 md:pb-5">
+									<h3
+										class="text-base sm:text-lg md:text-[22px] font-semibold">
+										Как я могу быть уверен в качестве
+										автомобиля?
+									</h3>
+									<button id="openText3">
+										<img
+											id="tiggleImg4"
+											class="min-w-[30px] min-h-[30px] w-[30px] opacity-90"
+											src="/images/plus.svg"
+											alt="open" />
+									</button>
+								</div>
+								<p
+									id="text3"
+									class="text-sm md:text-base mt-2 md:mt-4 hidden hiddens mx-4">
+									Все наши автомобили проходят тщательную
+									проверку и диагностику перед отправкой.
+									Мы также предоставляем отчеты об истории
+									автомобилей и их состоянии. И конечно же
+									перед покупкой проводится очная проверка
+									авто, нашими специалистами, для
+									составления фото и видео отчетности для
+									клиента.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer
+			class="sm:py-7 md:py-10 lg:py-16 bg-[#F1F1F1] flex items-center justify-center">
+			<div
+				class="flex flex-col items-center gap-5 sm:gap-7 md:gap-10">
+				<h2
+					class="text-center text-xl md:text-3xl font-semibold uppercase">
+					Хотите ЭКСПОРТИРОВАТЬ МАШИНУ?
+				</h2>
+				<p class="text-[#161616]  md:text-[24px]">
+					Тогда ждем вас
+				</p>
+				<div class="flex items-center gap-10">
+					<a
+						class="hover:bg-gray-300 p-1 rounded-md"
+						target="_blank"
+						href="https://www.instagram.com/gm.motorsint?igsh=ZHNid2M2NHdreWk4&utm_source=qr"
+						><img
+							src="/images/insta.svg"
+							alt="Instagram"
+					/></a>
+					<a
+						class="hover:bg-gray-300 p-1 rounded-md"
+						target="_blank"
+						href="https://t.me/gm_int">
+						<img
+							src="/images/telega.svg"
+							alt="Telegram" />
+					</a>
+					<a
+						class="hover:bg-gray-300 p-1 rounded-md"
+						target="_blank"
+						href="https://wa.me/821076202070">
+						<img
+							src="/images/whatsapp.svg"
+							alt="Whatsapp" />
+					</a>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+		<script src="index.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+		<script>
+				$(document).ready(function(){
+			  $('#testimonial-carousels').slick({
+			    slidesToShow: 3,
+			    slidesToScroll: 1,
+			    autoplay: true,
+			    autoplaySpeed: 2000,
+			    dots: true,
+			    centerMode: true,
+			    centerPadding: '0',
+			    prevArrow: '<button type="button" class="slick-prev">‹</button>',
+			    nextArrow: '<button type="button" class="slick-next">›</button>',
+			    responsive: [
+			      {
+			        breakpoint: 1024,
+			        settings: {
+			          slidesToShow: 2,
+			          slidesToScroll: 1,
+			          infinite: true,
+			          dots: true
+			        }
+			      },
+			      {
+			        breakpoint: 600,
+			        settings: {
+			          slidesToShow: 1,
+			          slidesToScroll: 1
+			        }
+			      }
+			    ]
+			  });
+			});
+			$(document).ready(function(){
+			  $('#testimonial-carousel').slick({
+			    slidesToShow: 4,
+			    slidesToScroll: 1,
+			    autoplay: true,
+			    autoplaySpeed: 2000,
+			    centerMode: true,
+			    centerPadding: '0',
+			    prevArrow: '<button type="button" class="slick-prev">‹</button>',
+			    nextArrow: '<button type="button" class="slick-next">›</button>',
+			    responsive: [
+			      {
+			        breakpoint: 1024,
+			        settings: {
+			          slidesToShow: 3,
+			          slidesToScroll: 1,
+			          infinite: true,
+			        }
+			      },
+			      {
+			        breakpoint: 600,
+			        settings: {
+			          slidesToShow: 2,
+			          slidesToScroll: 1
+			        }
+			      }
+			    ]
+			  });
+			});
+		</script>
+		<script>
+			AOS.init();
+		</script>
+		<script>
+						let currentSlide = 0;
+
+						function showSlide(index) {
+						    const cards = document.querySelectorAll('.card');
+						    const totalSlides = cards.length;
+						    if (index >= totalSlides) {
+						        currentSlide = 0;
+						    } else if (index < 0) {
+						        currentSlide = totalSlides - 1;
+						    } else {
+						        currentSlide = index;
+						    }
+						    cards.forEach((card, idx) => {
+						        card.classList.toggle('hidden', idx !== currentSlide);
+						    });
+
+						    const buttons = document.querySelectorAll('.pagination-btn');
+						    buttons.forEach((button, idx) => {
+						        if (idx === currentSlide) {
+						            button.classList.add('bg-[#1C3269]');
+						            button.classList.remove('bg-gray-300');
+						        } else {
+						            button.classList.add('bg-gray-300');
+						            button.classList.remove('bg-[#1C3269]');
+						        }
+						    });
+						}
+
+						function changeSlide(index) {
+						    showSlide(index);
+						}
+
+						function nextSlide() {
+						    showSlide(currentSlide + 1);
+						}
+
+						function prevSlide() {
+						    showSlide(currentSlide - 1);
+						}
+
+						// Initialize the first slide
+						showSlide(0);
+
+						const container = document.getElementById("myCarousel");
+			const options = {
+				infinite: true,
+				Autoplay: {
+			           timeout: 1000,
+			              	},
+			      };
+
+			new Carousel(container, options);
+				const container2 = document.getElementById("myCarousel2");
+
+
+			new Carousel(container2, options);
+				const containers = document.getElementById("myCarousels");
+
+
+			new Carousel(containers, options);
+		</script>
+	</body>
+</html>
