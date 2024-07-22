@@ -47,50 +47,56 @@
 	</head>
 	<body>
 		<header
-			class="w-full h-[326px] sm:h-[544px] md:h-[70vh] lg:h-[100vh] xl:h-[100vh] xl:h-[120vh]  relative z-10 bg-none roundedB"
+			class="w-full h-[70vh] md:h-[90vh] lg:h-[100vh] xl:h-[100vh] xl:h-[120vh]  relative z-10 bg-none roundedB"
 			style="background-image: url(/images/bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
 			<div
 				class="w-full h-full absolute top-0 left-0 roundedB"
 				style="background-color: rgba(0, 0, 0, 0.1);"></div>
 			<div
-				class="h-[68px] md:h-[90px] lg:h-[112px] xl:h-[150px] containers flex justify-between items-center animated-box relative z-10">
-				<a href="">
-					<img
-						class="w-[46px] sm:w-[56px] md:w-[75px] xl:w-[100px] h-[38px] sm:h-[60px] md:h-[82px] xl:h-[100px]"
-						src="/images/log.svg"
-						alt="Logo" />
-				</a>
-				<ul
-					class="hidden lg:flex items-center lg:text-base 2xl:text-xl font-semibold text-white lg:gap-2 xl:gap-8 nav_list">
-					<li class="">
-						<a href="">Главная</a>
-					</li>
-					<li class="">
-						<a href="#send">Автомобили в наличии</a>
-					</li>
-					<li class="">
-						<a href="#aboutus">О нас</a>
-					</li>
-					<li class="">
-						<a href="#contacts">Контакты</a>
-					</li>
-					<li class="">
-						<a href="#quations"
-							>Часто задаваемые вопросы</a
-						>
-					</li>
-				</ul>
-				<button
-					id="openBurger"
-					class="block lg:hidden">
-					<img
-						class="w-[36px] sm:w-[48px] h-[36px] sm:h-[48px]"
-						src="/images/menu.svg"
-						alt="Menu" />
-				</button>
+				class="h-[68px] md:h-[80px] containers flex flex-col">
+				<div
+					class="flex justify-between items-center animated-box relative z-10 h-full">
+					<a href="">
+						<img
+							class="w-[37px] h-[40px]"
+							src="/images/log.svg"
+							alt="Logo" />
+					</a>
+					<ul
+						class="hidden lg:flex items-center lg:text-lg font-semibold text-white lg:gap-2 xl:gap-6 nav_list">
+						<li class="">
+							<a href="">Главная</a>
+						</li>
+						<li class="">
+							<a href="/cars.html"
+								>Автомобили в наличии</a
+							>
+						</li>
+						<li class="">
+							<a href="#aboutus">О нас</a>
+						</li>
+						<li class="">
+							<a href="#contacts">Контакты</a>
+						</li>
+						<li class="">
+							<a href="#quations"
+								>Часто задаваемые вопросы</a
+							>
+						</li>
+					</ul>
+					<button
+						id="openBurger"
+						class="block lg:hidden">
+						<img
+							class="w-[36px] sm:w-[48px] h-[36px] sm:h-[48px]"
+							src="/images/menu.svg"
+							alt="Menu" />
+					</button>
+				</div>
+				<div class="h-[1px] mx-8 bg-white/20 "></div>
 			</div>
 			<div
-				class="containers flex items-start justify-center h-[30vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] relative z-10 flex-col gap-10">
+				class="containers flex items-start justify-center h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] relative z-10 flex-col gap-3 md:gap-10 mt-10 md:mt-16">
 				<h2
 					class="text-3xl sm:text-[36px] md:text-[44px] lg:text-[60px] xl:text-[80px] font-semibold text-white show_text">
 					Привозим авто <br />
@@ -101,9 +107,10 @@
 					Качество на колесах,<br />
 					надежность в пути!
 				</p>
-				<div class="flex items-center gap-10">
+				<div
+					class="flex items-center gap-2 sm:gap-5 md:gap-10 flex-wrap sm:flex-nowrap">
 					<button
-						class="bg-[#C11800] rounded-2xl text-white h-[61px] px-10 text-lg font-medium flex items-center gap-2 hover:text-[#C11800] hover:bg-white">
+						class="bg-[#C11800] rounded-2xl text-white h-[50px] sm:h-[61px] px-5 sm:px-10 text-sm sm:text-base md:text-lg font-medium flex items-center gap-2 hover:text-[#C11800] hover:bg-white">
 						Узнать подробнее
 						<svg
 							width="24"
@@ -120,7 +127,7 @@
 						</svg>
 					</button>
 					<button
-						class=" rounded-2xl text-white h-[61px] px-10 text-lg border border-white/40 hover:border-white/80 hover:text-white/80 font-medium flex items-center gap-2">
+						class=" rounded-2xl text-white h-[50px] sm:h-[61px] px-5 sm:px-10 text-sm sm:text-base md:text-lg border border-white/40 hover:border-white/80 hover:text-white/80 font-medium flex items-center gap-2">
 						<svg
 							width="24"
 							height="25"
@@ -182,14 +189,18 @@
 			</div>
 			<div
 				id="burger"
-				class="absolute w-full h-full bg-black/10 top-0 left-0 flex justify-end items-start p-5 hidden">
-				<div>
+				class="fixed w-full h-full bg-black/10 top-0 left-0 flex justify-end items-start z-50 hidden">
+				<div class="h-full">
 					<div
 						id="blockBeurger"
-						class="bg-white p-5 rounded-xl relative w-[245px] z-50">
+						class="bg-white p-5 relative w-[300px] h-full z-50">
+						<p
+							class="text-start font-bold text-lg mb-10">
+							Разделы
+						</p>
 						<button
 							id="closeBurger"
-							class="absolute top-4 left-5">
+							class="absolute top-4 right-5">
 							<svg
 								width="32"
 								height="32"
@@ -204,11 +215,12 @@
 									stroke-linejoin="round" />
 							</svg>
 						</button>
-						<p class="text-center font-bold">Разделы</p>
 						<div
-							class="flex flex-col font-medium gap-5 mt-5">
+							class="flex flex-col font-medium text-base items-end gap-5 mt-5">
 							<a href="">Главная</a>
-							<a href="#send">Автомобили в наличии</a>
+							<a href="/cars.html"
+								>Автомобили в наличии</a
+							>
 							<a href="#aboutus">О нас</a>
 							<a href="#contacts">Контакты</a>
 							<a href="#quations"
@@ -221,12 +233,13 @@
 		</header>
 		<section
 			class="mt-7 md:mt-10 lg:mt-10 w-full overflow-hidden bg-white">
-			<div class="py-7 md:py-10 lg:py-20 bg-white">
+			<div
+				class="py-2 sm:py-5 md:py-10 lg:py-20 bg-white">
 				<div
 					class="containers"
 					id="aboutus">
 					<h2
-						class="text-xl sm:text-[28px] md:text-[36px] lg:text-[42px] font-semibold mb-5 md:mb-7 lg:mb-10">
+						class="text-xl sm:text-[28px] md:text-[36px] lg:text-[42px] font-semibold mb-3 md:mb-7 lg:mb-10">
 						О нас
 					</h2>
 					<div
@@ -257,15 +270,17 @@
 				</div>
 			</div>
 			<div
-				class="py-7 md:py-10 lg:py-20 bg-white containers">
+				class="py-4 sm:py-7 md:py-10 lg:py-20 bg-white containers">
 				<h2
-					class="text-[44px] font-semibold text-[#C11800] mb-10">
+					class="text-[24px] sm:text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-[#C11800] mb-0 md:mb-4 lg:mb-6">
 					Лучшие предложения
 				</h2>
 				<div class="menu">
-					<div class="menu--wrapper flex gap-10 ">
+					<div
+						class="menu--wrapper flex gap-7 xl:gap-9 justify-between lg:justfy-center w-full overflow-x-scroll p-10"
+						id="myCar">
 						<div
-							class="rounded-xl shadow-xl w-[440px] overflow-hidden menu--item">
+							class="rounded-xl shadow-xl min-w-[300px] w-[440px] overflow-hidden menu--item">
 							<div
 								class="f-carousel h-[230px]"
 								id="myCarousel">
@@ -282,9 +297,10 @@
 									src="/images/car2.jpg"
 									alt="" />
 							</div>
-							<div class="p-8 flex flex-col gap-6">
+							<div
+								class="p-3 lg:p-4 xl:p-6 flex flex-col gap-6">
 								<h2
-									class="text-[22px] text-[#191A1B] font-medium">
+									class="text-xl lg:text-[22px] text-[#191A1B] font-medium">
 									Peugeot e-2008 Electric
 								</h2>
 								<div
@@ -306,44 +322,59 @@
 								<div class="flex flex-col gap-3">
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Дата регистрации :
 										</span>
-										<span>12.12.2024</span>
+										<span class="text-sm lg:text-base"
+											>12.12.2024</span
+										>
 									</div>
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Пробег :</span
 										>
-										<span>45 km</span>
+										<span class="text-sm lg:text-base"
+											>45 km</span
+										>
 									</div>
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Мощность :</span
 										>
-										<span>345 KW (469 PS)</span>
+										<span class="text-sm lg:text-base"
+											>345 KW (469 PS)</span
+										>
 									</div>
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Коробка :</span
 										>
-										<span>Automatic</span>
+										<span class="text-sm lg:text-base"
+											>Automatic</span
+										>
 									</div>
 									<div
-										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										class="text-lg flex items-center justify-between mb-4">
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Топливо :</span
 										>
-										<span>Бензин</span>
+										<span class="text-sm lg:text-base"
+											>Бензин</span
+										>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div
-							class="rounded-xl shadow-xl w-[440px] overflow-hidden menu--item">
+							class="rounded-xl shadow-xl min-w-[300px] w-[440px] overflow-hidden menu--item">
 							<div
 								class="f-carousel h-[230px]"
 								id="myCarousel2">
@@ -360,9 +391,10 @@
 									src="/images/car2.jpg"
 									alt="" />
 							</div>
-							<div class="p-8 flex flex-col gap-6">
+							<div
+								class="p-3 lg:p-4 xl:p-6 flex flex-col gap-6">
 								<h2
-									class="text-[22px] text-[#191A1B] font-medium">
+									class="text-xl lg:text-[22px] text-[#191A1B] font-medium">
 									Peugeot e-2008 Electric
 								</h2>
 								<div
@@ -384,44 +416,59 @@
 								<div class="flex flex-col gap-3">
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Дата регистрации :
 										</span>
-										<span>12.12.2024</span>
+										<span class="text-sm lg:text-base"
+											>12.12.2024</span
+										>
 									</div>
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Пробег :</span
 										>
-										<span>45 km</span>
+										<span class="text-sm lg:text-base"
+											>45 km</span
+										>
 									</div>
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Мощность :</span
 										>
-										<span>345 KW (469 PS)</span>
+										<span class="text-sm lg:text-base"
+											>345 KW (469 PS)</span
+										>
 									</div>
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Коробка :</span
 										>
-										<span>Automatic</span>
+										<span class="text-sm lg:text-base"
+											>Automatic</span
+										>
 									</div>
 									<div
-										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										class="text-lg flex items-center justify-between mb-4">
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Топливо :</span
 										>
-										<span>Бензин</span>
+										<span class="text-sm lg:text-base"
+											>Бензин</span
+										>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div
-							class="rounded-xl shadow-xl w-[440px] overflow-hidden menu--item">
+							class="rounded-xl shadow-xl min-w-[300px] w-[440px] overflow-hidden menu--item">
 							<div
 								class="f-carousel h-[230px]"
 								id="myCarousels">
@@ -438,9 +485,10 @@
 									src="/images/car2.jpg"
 									alt="" />
 							</div>
-							<div class="p-8 flex flex-col gap-6">
+							<div
+								class="p-3 lg:p-4 xl:p-6 flex flex-col gap-6">
 								<h2
-									class="text-[22px] text-[#191A1B] font-medium">
+									class="text-xl lg:text-[22px] text-[#191A1B] font-medium">
 									Peugeot e-2008 Electric
 								</h2>
 								<div
@@ -462,38 +510,53 @@
 								<div class="flex flex-col gap-3">
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Дата регистрации :
 										</span>
-										<span>12.12.2024</span>
+										<span class="text-sm lg:text-base"
+											>12.12.2024</span
+										>
 									</div>
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Пробег :</span
 										>
-										<span>45 km</span>
+										<span class="text-sm lg:text-base"
+											>45 km</span
+										>
 									</div>
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Мощность :</span
 										>
-										<span>345 KW (469 PS)</span>
+										<span class="text-sm lg:text-base"
+											>345 KW (469 PS)</span
+										>
 									</div>
 									<div
 										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Коробка :</span
 										>
-										<span>Automatic</span>
+										<span class="text-sm lg:text-base"
+											>Automatic</span
+										>
 									</div>
 									<div
-										class="text-lg flex items-center justify-between">
-										<span class="font-semibold text-lg"
+										class="text-lg flex items-center justify-between mb-4">
+										<span
+											class="font-semibold md:text-sm lg:text-base xl:text-lg"
 											>Топливо :</span
 										>
-										<span>Бензин</span>
+										<span class="text-sm lg:text-base"
+											>Бензин</span
+										>
 									</div>
 								</div>
 							</div>
@@ -502,7 +565,7 @@
 				</div>
 			</div>
 			<div
-				class="py-5 md:py-7 lg:py-10 my-7 md:my-10 bg-[#F1F1F1] containers rounded-2xl">
+				class="py-5 md:py-7 lg:py-10 my-0 md:my-10 bg-[#F1F1F1] containers rounded-2xl">
 				<div
 					class="flex justify-between items-center px-16">
 					<div
@@ -527,7 +590,8 @@
 					</div>
 				</div>
 			</div>
-			<div class=" overflow-hidden">
+			<div
+				class=" py-0 md:py-7 lg:py-10 overflow-hidden">
 				<div class="">
 					<h2
 						class="text-xl containers sm:text-[28px] md:text-[34px] lg:text-[38px] font-semibold text-start mt-5 md:mt-0 mb-2 md:mb-5">
@@ -538,82 +602,116 @@
 						id="testimonial-carousel">
 						<div
 							style="display: flex;"
-							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							class="rounded-xl overflow-hidden p-3 sm:p-6 h-[472px] relative flex items-center justify-center relative">
 							<img
 								style="border-radius: 20px !important;"
-								class="h-full object-contain"
+								class="h-full object-cover xl:object-contain"
 								src="/images/1.jpg"
 								alt="" />
 							<div
-								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
-								<h3 class="font-semibold text-2xl">
-									John Doe
+								class="absolute left-12 sm:left-4 md:left-5 lg:left-5 overflow-hidden xl:left-3 lg:h-20 2xl:left-5 top-[320px] bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3
+									class="font-semibold text-lg lg:text-xl 2xl:text-xl">
+									Евгений Ли
 								</h3>
-								<p class="font-medium">Директор</p>
+								<p class="font-medium text-sm">
+									Директор
+								</p>
 							</div>
 						</div>
 						<div
 							style="display: flex;"
-							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							class="rounded-xl overflow-hidden p-3 sm:p-6 h-[472px] relative flex items-center justify-center relative">
 							<img
 								style="border-radius: 20px !important;"
-								class="h-full object-contain"
-								src="/images/1.jpg"
+								class="h-full object-cover xl:object-contain"
+								src="/images/2.jpg"
 								alt="" />
 							<div
-								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
-								<h3 class="font-semibold text-2xl">
-									John Doe
+								class="absolute left-12 sm:left-4 md:left-5 lg:left-5 overflow-hidden xl:left-3 lg:h-20 2xl:left-5 top-[320px] bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3
+									class="font-semibold text-lg lg:text-xl 2xl:text-xl">
+									Татьяна Ли
 								</h3>
-								<p class="font-medium">Директор</p>
+								<p class="font-medium text-sm">
+									Старший менеджер отдела логистики
+								</p>
 							</div>
 						</div>
 						<div
 							style="display: flex;"
-							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							class="rounded-xl overflow-hidden p-3 sm:p-6 h-[472px] relative flex items-center justify-center relative">
 							<img
 								style="border-radius: 20px !important;"
-								class="h-full object-contain"
-								src="/images/1.jpg"
+								class="h-full object-cover xl:object-contain"
+								src="/images/3.jpg"
 								alt="" />
 							<div
-								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
-								<h3 class="font-semibold text-2xl">
-									John Doe
+								class="absolute left-12 sm:left-4 md:left-5 lg:left-5 overflow-hidden xl:left-3 lg:h-20 2xl:left-5 top-[320px] bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3
+									class="font-semibold text-lg lg:text-xl 2xl:text-xl">
+									Милена Хан
 								</h3>
-								<p class="font-medium">Директор</p>
+								<p class="font-medium text-sm">
+									Менеджер административного отдела
+								</p>
 							</div>
 						</div>
 						<div
 							style="display: flex;"
-							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							class="rounded-xl overflow-hidden p-3 sm:p-6 h-[472px] relative flex items-center justify-center relative">
 							<img
 								style="border-radius: 20px !important;"
-								class="h-full object-contain"
-								src="/images/1.jpg"
+								class="h-full object-cover xl:object-contain"
+								src="/images/4.jpg"
 								alt="" />
 							<div
-								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
-								<h3 class="font-semibold text-2xl">
-									John Doe
+								class="absolute left-12 sm:left-4 md:left-5 lg:left-5 overflow-hidden xl:left-3 lg:h-20 2xl:left-5 top-[320px] bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3
+									class="font-semibold text-lg lg:text-xl 2xl:text-xl">
+									Дмитрий Развинавичюс
 								</h3>
-								<p class="font-medium">Директор</p>
+								<p class="font-medium text-sm">
+									Специалист по подбору автомобилей
+								</p>
 							</div>
 						</div>
 						<div
 							style="display: flex;"
-							class="rounded-xl overflow-hidden p-6 h-[472px] relative flex items-center justify-center relative">
+							class="rounded-xl overflow-hidden p-3 sm:p-6 h-[472px] relative flex items-center justify-center relative">
 							<img
 								style="border-radius: 20px !important;"
-								class="h-full object-contain"
-								src="/images/1.jpg"
+								class="h-full object-cover xl:object-contain"
+								src="/images/5.jpg"
 								alt="" />
 							<div
-								class="absolute left-12 bottom-16 bg-white rounded-e-lg pl-3 pr-10 z-50">
-								<h3 class="font-semibold text-2xl">
-									John Doe
+								class="absolute left-12 sm:left-4 md:left-5 lg:left-5 overflow-hidden xl:left-3 lg:h-20 2xl:left-5 top-[320px] bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3
+									class="font-semibold text-lg lg:text-xl 2xl:text-xl">
+									Виталий Пак
 								</h3>
-								<p class="font-medium">Директор</p>
+								<p class="font-medium text-sm">
+									Мененджер по работе с клиентами
+								</p>
+							</div>
+						</div>
+						<div
+							style="display: flex;"
+							class="rounded-xl overflow-hidden p-3 sm:p-6 h-[472px] relative flex items-center justify-center relative">
+							<img
+								style="border-radius: 20px !important;"
+								class="h-full object-cover xl:object-contain"
+								src="/images/6.jpg"
+								alt="" />
+							<div
+								class="absolute left-12 sm:left-4 md:left-5 lg:left-5 overflow-hidden xl:left-3 h-20 2xl:left-5 top-[320px] bg-white rounded-e-lg pl-3 pr-10 z-50">
+								<h3
+									class="font-semibold text-lg lg:text-xl 2xl:text-xl">
+									Николай Ни
+								</h3>
+								<p class="font-medium text-sm">
+									Специалист по подбору и осмотру
+								</p>
 							</div>
 						</div>
 					</div>
@@ -724,7 +822,7 @@
 				</div>
 			</div>
 			<div
-				class="containers py-7 md:py-10 lg:py-20"
+				class="containers py-0 md:py-10 lg:py-10"
 				id="contacts">
 				<h2
 					class="text-xl sm:text-[28px] md:text-[34px] lg:text-[38px] font-semibold text-start mb-5 md:mb-8">
@@ -847,6 +945,70 @@
 				</div>
 			</div>
 			<div
+				class="py-5 md:py-10 lg:py-[100px] containers flex items-center lg:items-start justify-around flex-col lg:flex-row">
+				<div
+					class="w-full lg:w-1/2 flex flex-col gap-2 md:gap-4">
+					<h2
+						class="text-xl sm:text-[30px] md:text-[44px] lg:text-[60px] xl:text-[80px] font-semibold show_text">
+						Свяжитесь<br class="hidden lg:block" />
+						с нами
+					</h2>
+					<p
+						class=" md:text-lg lg:text-[22px] w-full lg:w-[460px]">
+						Заполните форму и один из менеджеров
+						обязательно свяжется с вами в самое
+						ближайшее время
+					</p>
+				</div>
+				<form
+					class="w-full sm:w-[579px] p-4 md:p-10 flex flex-col gap-4 md:gap-7 boxshadow rounded-xl mt-5 lg:mt-0">
+					<div class="flex flex-col gap-2">
+						<label
+							for=""
+							class="md:text-lg lg:text-xl font-medium"
+							>Имя</label
+						>
+						<input
+							type="text"
+							name=""
+							id=""
+							class="h-[50px] md:h-[60px] w-full rounded-xl border-none bg-[#EBEBEB]/60 p-5"
+							placeholder="Введите имя" />
+					</div>
+					<div class="flex flex-col gap-2">
+						<label
+							for=""
+							class="md:text-lg lg:text-xl font-medium"
+							>E - mail</label
+						>
+						<input
+							type="text"
+							name=""
+							id=""
+							class="h-[50px] md:h-[60px] w-full rounded-xl border-none bg-[#EBEBEB]/60 p-5"
+							placeholder="E-mail" />
+					</div>
+					<div class="flex flex-col gap-2">
+						<label
+							for=""
+							class="md:text-lg lg:text-xl font-medium"
+							>Ваше сообщение</label
+						>
+						<textarea
+							type="text"
+							name=""
+							id=""
+							class="h-[200px] w-full rounded-xl border-none bg-[#EBEBEB]/60 p-5"
+							placeholder="Введите ваше сообщение"></textarea>
+					</div>
+					<button
+						type="button"
+						class="h-[50px] md:h-[60px] w-full rounded-xl bg-[#C11800] text-white md:text-lg lg:text-lg font-medium hover:bg-white hover:text-[#C11800] hover:border hover:border-[#C11800]">
+						Отправить
+					</button>
+				</form>
+			</div>
+			<div
 				class="py-7 md:py-10 lg:py-[100px] bg-black">
 				<div
 					class="containers"
@@ -860,7 +1022,7 @@
 							class="flex flex-col gap-10 text-white">
 							<div>
 								<div
-									class="flex justify-between items-center border-b pb-3 md:pb-5">
+									class="flex justify-between items-center  pb-3 md:pb-5">
 									<h3
 										class="text-base sm:text-lg md:text-[22px] font-semibold">
 										Сколько времени занимает доставка
@@ -884,7 +1046,7 @@
 							</div>
 							<div>
 								<div
-									class="flex justify-between items-center border-b pb-3 md:pb-5">
+									class="flex justify-between items-center  pb-3 md:pb-5">
 									<h3
 										class="text-base sm:text-lg md:text-[22px] font-semibold">
 										Как происходит оплата?
@@ -906,7 +1068,7 @@
 							</div>
 							<div>
 								<div
-									class="flex justify-between items-center border-b pb-3 md:pb-5">
+									class="flex justify-between items-center  pb-3 md:pb-5">
 									<h3
 										class="text-base sm:text-lg md:text-[22px] font-semibold">
 										Какие автомобили вы можете предложить?
@@ -935,7 +1097,7 @@
 							</div>
 							<div>
 								<div
-									class="flex justify-between items-center border-b pb-3 md:pb-5">
+									class="flex justify-between items-center  pb-3 md:pb-5">
 									<h3
 										class="text-base sm:text-lg md:text-[22px] font-semibold">
 										Как я могу быть уверен в качестве
@@ -968,11 +1130,11 @@
 			</div>
 		</section>
 		<footer
-			class="sm:py-7 md:py-10 lg:py-16 bg-[#F1F1F1] flex items-center justify-center">
+			class="py-5 sm:py-7 md:py-10 lg:py-16 bg-[#F1F1F1] flex items-center justify-center">
 			<div
 				class="flex flex-col items-center gap-5 sm:gap-7 md:gap-10">
 				<h2
-					class="text-center text-xl md:text-3xl font-semibold uppercase">
+					class="text-center text-lg sm:text-xl md:text-3xl font-semibold uppercase">
 					Хотите ЭКСПОРТИРОВАТЬ МАШИНУ?
 				</h2>
 				<p class="text-[#161616]  md:text-[24px]">
@@ -1009,7 +1171,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
-		<script src="index.js"></script>
+		<script src="/scripts/index.js"></script>
 		<script
 			type="text/javascript"
 			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -1047,7 +1209,7 @@
 			});
 			$(document).ready(function(){
 			  $('#testimonial-carousel').slick({
-			    slidesToShow: 4,
+			    slidesToShow: 5,
 			    slidesToScroll: 1,
 			    autoplay: true,
 			    autoplaySpeed: 2000,
@@ -1056,6 +1218,14 @@
 			    prevArrow: '<button type="button" class="slick-prev">‹</button>',
 			    nextArrow: '<button type="button" class="slick-next">›</button>',
 			    responsive: [
+					 {
+			        breakpoint: 1280,
+			        settings: {
+			          slidesToShow: 4,
+			          slidesToScroll: 1,
+			          infinite: true,
+			        }
+			      },
 			      {
 			        breakpoint: 1024,
 			        settings: {
@@ -1068,6 +1238,13 @@
 			        breakpoint: 600,
 			        settings: {
 			          slidesToShow: 2,
+			          slidesToScroll: 1
+			        }
+			      },
+				  {
+			        breakpoint: 500,
+			        settings: {
+			          slidesToShow: 1,
 			          slidesToScroll: 1
 			        }
 			      }

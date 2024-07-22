@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Авто в наличии</title>
+		<link
+			rel="stylesheet"
+			href="/style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<header class="h-[80px] bg-[#191A1B]">
+			<div>
+				<div
+					class="h-[68px] md:h-[80px] containers flex flex-col">
+					<div
+						class="flex justify-between items-center animated-box relative z-10 h-full">
+						<a href="">
+							<img
+								class="w-[37px] h-[40px]"
+								src="/images/log.svg"
+								alt="Logo" />
+						</a>
+						<ul
+							class="hidden lg:flex items-center lg:text-lg font-semibold text-white lg:gap-2 xl:gap-6 nav_list">
+							<li class="">
+								<a href="/index.html">Главная</a>
+							</li>
+							<li class="">
+								<a href="/cars.html"
+									>Автомобили в наличии</a
+								>
+							</li>
+							<li class="">
+								<a href="#aboutus">О нас</a>
+							</li>
+							<li class="">
+								<a href="#contacts">Контакты</a>
+							</li>
+							<li class="">
+								<a href="#quations"
+									>Часто задаваемые вопросы</a
+								>
+							</li>
+						</ul>
+						<button
+							id="openBurger"
+							class="block lg:hidden">
+							<img
+								class="w-[36px] sm:w-[48px] h-[36px] sm:h-[48px]"
+								src="/images/menu.svg"
+								alt="Menu" />
+						</button>
+					</div>
+				</div>
+				<div
+					id="burger"
+					class="fixed w-full h-full bg-black/10 top-0 left-0 flex justify-end items-start z-50 hidden">
+					<div class="h-full">
+						<div
+							id="blockBeurger"
+							class="bg-white p-5 relative w-[300px] h-full z-50">
+							<p
+								class="text-start font-bold text-lg mb-10">
+								Разделы
+							</p>
+							<button
+								id="closeBurger"
+								class="absolute top-4 right-5">
+								<svg
+									width="32"
+									height="32"
+									viewBox="0 0 32 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12.0001 8C12.0001 8 20 13.8919 20 16.0001C20 18.1082 12 24 12 24"
+										stroke="black"
+										stroke-width="1.06667"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</button>
+							<div
+								class="flex flex-col font-medium text-base items-end gap-5 mt-5">
+								<a href="">Главная</a>
+								<a href="/cars.html"
+									>Автомобили в наличии</a
+								>
+								<a href="#aboutus">О нас</a>
+								<a href="#contacts">Контакты</a>
+								<a href="#quations"
+									>Часто задаваемые вопросы</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section
+			class="containers flex flex-col py-20 gap-10">
+			<p>
+				<a
+					class="text-[#8A8A8A]"
+					href="/index.html"
+					>Главная </a
+				>/
+				<strong> Каталог</strong>
+			</p>
+			<div class="flex justify-between">
+				<h2 class="font-semibold text-3xl">
+					Найти машину
+				</h2>
+				<div class="flex items-center gap-4">
+					<button
+						class="h-[50px] bg-[#191A1B] text-white px-7 rounded-md font-medium text-lg">
+						Encar
+					</button>
+					<a
+						href=""
+						class="h-[50px] flex items-center justify-center bg-white border border-[#161616]/20 px-7 rounded-md font-medium text-lg hover:bg-[#191A1B] hover:text-white"
+						>CCCha</a
+					>
+				</div>
+			</div>
+			<div class="flex items-start gap-10">
+				<div
+					class="min-w-[350px] flex flex-col gap-7">
+					<div
+						class="w-full relative h-[54px] bg-[#F7F7F7] placeholder:text-black px-5 cursor-pointer font-medium rounded-md shadow-sm flex items-center">
+						<button
+							id="btnMark"
+							class="w-full flex justify-start">
+							<span id="markValue">Марка</span>
+						</button>
+						<svg
+							class="absolute right-5 top-4"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.2273 8H11.7775H7.77052C7.08483 8 6.74199 8.9107 7.22768 9.44455L10.9275 13.5113C11.5203 14.1629 12.4846 14.1629 13.0774 13.5113L14.4845 11.9647L16.7772 9.44455C17.2558 8.9107 16.9129 8 16.2273 8Z"
+								fill="#171717" />
+						</svg>
+						<div
+							id="markLists"
+							class="absolute top-0 left-0 z-50 rounded-xl overflow-hidden shadow-black-100 border shadow-lg bg-white w-full hidden">
+							<div
+								class="flex p-4 bg-[#F7F7F7] justify-between">
+								<span>Марка</span>
+								<svg
+									id="closeMarkLists"
+									class="cursor-pointer hover:bg-black/10 rounded-md"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M16.7908 8.21936C17.0697 7.94042 17.0697 7.48816 16.7908 7.20921C16.5118 6.93026 16.0596 6.93026 15.7806 7.20921L12 10.9898L8.21936 7.20921C7.94042 6.93026 7.48816 6.93026 7.20921 7.20921C6.93026 7.48816 6.93026 7.94042 7.20921 8.21936L10.9898 12L7.20921 15.7806C6.93026 16.0596 6.93026 16.5118 7.20921 16.7908C7.48816 17.0697 7.94042 17.0697 8.21936 16.7908L12 13.0102L15.7806 16.7908C16.0596 17.0697 16.5118 17.0697 16.7908 16.7908C17.0697 16.5118 17.0697 16.0596 16.7908 15.7806L13.0102 12L16.7908 8.21936Z"
+										fill="#C11800" />
+								</svg>
+							</div>
+							<ul
+								class="p-2 h-[400px] overflow-y-scroll">
+								<li>
+									<label
+										for="checkbox1"
+										class="checkbox-label">
+										<input
+											value=""
+											type="checkbox"
+											id="checkbox1"
+											class="checkbox" />
+										<span
+											class="checkbox-view text-[#6E778D]">
+											<svg
+												class="checkbox-icon"
+												viewBox="0 0 20 20"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M4.16797 11.6641L7.08464 14.5807L15.8346 5.41406"
+													stroke="#1C3269"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+											Aston Martin (13)
+										</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w-full relative ">
+						<input
+							class="w-full h-[54px] bg-[#F7F7F7] placeholder:text-black px-5 cursor-pointer font-medium rounded-md shadow-sm"
+							type="text"
+							placeholder="Модель"
+							name=""
+							id="" />
+						<svg
+							class="absolute right-5 top-4"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.2273 8H11.7775H7.77052C7.08483 8 6.74199 8.9107 7.22768 9.44455L10.9275 13.5113C11.5203 14.1629 12.4846 14.1629 13.0774 13.5113L14.4845 11.9647L16.7772 9.44455C17.2558 8.9107 16.9129 8 16.2273 8Z"
+								fill="#171717" />
+						</svg>
+					</div>
+					<div class="w-full relative ">
+						<input
+							class="w-full h-[54px] bg-[#F7F7F7] placeholder:text-black px-5 cursor-pointer font-medium rounded-md shadow-sm"
+							type="text"
+							placeholder="Комплектация"
+							name=""
+							id="" />
+						<svg
+							class="absolute right-5 top-4"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.2273 8H11.7775H7.77052C7.08483 8 6.74199 8.9107 7.22768 9.44455L10.9275 13.5113C11.5203 14.1629 12.4846 14.1629 13.0774 13.5113L14.4845 11.9647L16.7772 9.44455C17.2558 8.9107 16.9129 8 16.2273 8Z"
+								fill="#171717" />
+						</svg>
+					</div>
+					<div class="w-full h-[54px] flex">
+						<input
+							class="w-1/2 h-full bg-[#F7F7F7] focus:border-2 focus:border-blue-500 outline-none rounded-l-md px-5 "
+							type="text"
+							name=""
+							placeholder="Цена от"
+							id="" />
+						<div
+							class="w-[1px] h-full bg-black/10"></div>
+						<input
+							class="w-1/2 h-full bg-[#F7F7F7] focus:border-2 focus:border-blue-500 outline-none rounded-r-md px-5 "
+							type="text"
+							name=""
+							placeholder="Цена до"
+							id="" />
+					</div>
+					<div class="w-full relative ">
+						<input
+							class="w-full h-[54px] bg-[#F7F7F7] placeholder:text-black px-5 cursor-pointer font-medium rounded-md shadow-sm"
+							type="text"
+							placeholder="Трансмиссия"
+							name=""
+							id="" />
+						<svg
+							class="absolute right-5 top-4"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.2273 8H11.7775H7.77052C7.08483 8 6.74199 8.9107 7.22768 9.44455L10.9275 13.5113C11.5203 14.1629 12.4846 14.1629 13.0774 13.5113L14.4845 11.9647L16.7772 9.44455C17.2558 8.9107 16.9129 8 16.2273 8Z"
+								fill="#171717" />
+						</svg>
+					</div>
+					<div class="w-full relative ">
+						<input
+							class="w-full h-[54px] bg-[#F7F7F7] placeholder:text-black px-5 cursor-pointer font-medium rounded-md shadow-sm"
+							type="text"
+							placeholder="Привод"
+							name=""
+							id="" />
+						<svg
+							class="absolute right-5 top-4"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.2273 8H11.7775H7.77052C7.08483 8 6.74199 8.9107 7.22768 9.44455L10.9275 13.5113C11.5203 14.1629 12.4846 14.1629 13.0774 13.5113L14.4845 11.9647L16.7772 9.44455C17.2558 8.9107 16.9129 8 16.2273 8Z"
+								fill="#171717" />
+						</svg>
+					</div>
+					<div class="w-full relative ">
+						<input
+							class="w-full h-[54px] bg-[#F7F7F7] placeholder:text-black px-5 cursor-pointer font-medium rounded-md shadow-sm"
+							type="text"
+							placeholder="Топливо"
+							name=""
+							id="" />
+						<svg
+							class="absolute right-5 top-4"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.2273 8H11.7775H7.77052C7.08483 8 6.74199 8.9107 7.22768 9.44455L10.9275 13.5113C11.5203 14.1629 12.4846 14.1629 13.0774 13.5113L14.4845 11.9647L16.7772 9.44455C17.2558 8.9107 16.9129 8 16.2273 8Z"
+								fill="#171717" />
+						</svg>
+					</div>
+					<div
+						class="flex items-center cursor-pointer gap-2 hover:underline text-[#C11800] w-auto">
+						<img
+							src="/images/trash.svg"
+							alt="" />
+						<span class="text-[#C11800]"
+							>Очистить все</span
+						>
+					</div>
+					<button
+						class="h-[50px] bg-[#191A1B] flex items-center justify-center text-white font-medium gap-2 rounded-md">
+						<svg
+							width="21"
+							height="20"
+							viewBox="0 0 21 20"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.0833 17.5003C14.4555 17.5003 18 13.9559 18 9.58366C18 5.2114 14.4555 1.66699 10.0833 1.66699C5.71104 1.66699 2.16663 5.2114 2.16663 9.58366C2.16663 13.9559 5.71104 17.5003 10.0833 17.5003Z"
+								stroke="white"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M18.8333 18.3337L17.1666 16.667"
+								stroke="white"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+						Поиск
+					</button>
+				</div>
+				<div class="w-full">
+					<div
+						class="flex justify-end items-center gap-8 mb-10">
+						<span class="font-medium"
+							>Сортировать по</span
+						>
+						<div
+							class="relative w-[300px] h-[54px] bg-[#F7F7F7] px-5 cursor-pointer font-medium rounded-md shadow-sm outline-none flex justify-start items-center">
+							<button
+								id="openFilterPrice"
+								class="w-full flex justify-start">
+								<span id="filterPriceText"
+									>Цена: по возрастанию</span
+								>
+							</button>
+							<svg
+								class="absolute right-5 top-4"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M16.2273 8H11.7775H7.77052C7.08483 8 6.74199 8.9107 7.22768 9.44455L10.9275 13.5113C11.5203 14.1629 12.4846 14.1629 13.0774 13.5113L14.4845 11.9647L16.7772 9.44455C17.2558 8.9107 16.9129 8 16.2273 8Z"
+									fill="#171717" />
+							</svg>
+							<div
+								id="filterPrice"
+								class="absolute top-0 left-0 z-50 rounded-xl overflow-hidden shadow-black-100 border shadow-lg bg-white w-full hidden">
+								<div
+									class="flex p-4 bg-[#F7F7F7] justify-between">
+									<span
+										class="text-[#C11800] font-medium"
+										id="filterPriceText2"
+										>Цена: по возрастанию</span
+									>
+									<svg
+										id="closeFilterPrice"
+										class="cursor-pointer hover:bg-black/10 rounded-md"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M16.7908 8.21936C17.0697 7.94042 17.0697 7.48816 16.7908 7.20921C16.5118 6.93026 16.0596 6.93026 15.7806 7.20921L12 10.9898L8.21936 7.20921C7.94042 6.93026 7.48816 6.93026 7.20921 7.20921C6.93026 7.48816 6.93026 7.94042 7.20921 8.21936L10.9898 12L7.20921 15.7806C6.93026 16.0596 6.93026 16.5118 7.20921 16.7908C7.48816 17.0697 7.94042 17.0697 8.21936 16.7908L12 13.0102L15.7806 16.7908C16.0596 17.0697 16.5118 17.0697 16.7908 16.7908C17.0697 16.5118 17.0697 16.0596 16.7908 15.7806L13.0102 12L16.7908 8.21936Z"
+											fill="#C11800" />
+									</svg>
+								</div>
+								<ul
+									class="p-2 h-full overflow-y-scroll"
+									id="dropdown">
+									<li
+										class="p-2 poppins-normal text-[#6E778D] text-sm cursor-pointer hover:bg-[#F7F7F7]">
+										Сначала новые
+									</li>
+									<li
+										class="p-2 poppins-normal text-[#6E778D] text-sm cursor-pointer hover:bg-[#F7F7F7]">
+										Цена: по возрастанию
+									</li>
+									<li
+										class="p-2 poppins-normal text-[#6E778D] text-sm cursor-pointer hover:bg-[#F7F7F7]">
+										Цена: по убыванию
+									</li>
+									<li
+										class="p-2 poppins-normal text-[#6E778D] text-sm cursor-pointer hover:bg-[#F7F7F7]">
+										Пробег: по возрастанию
+									</li>
+									<li
+										class="p-2 poppins-normal text-[#6E778D] text-sm cursor-pointer hover:bg-[#F7F7F7]">
+										Пробег: по убыванию
+									</li>
+									<li
+										class="p-2 poppins-normal text-[#6E778D] text-sm cursor-pointer hover:bg-[#F7F7F7]">
+										Год: по возрастанию
+									</li>
+									<li
+										class="p-2 poppins-normal text-[#6E778D] text-sm cursor-pointer hover:bg-[#F7F7F7]">
+										Год: по убыванию
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-wrap gap-10">
+						<div
+							class="w-[30%] overflow-hidden rounded-xl flex flex-col shadow-lg">
+							<a
+								href="/detail.html"
+								class="w-full">
+								<img
+									class="h-[160px] w-full object-cover"
+									src="/images/car1.jpg"
+									alt="" />
+							</a>
+							<div class="p-5 flex flex-col gap-3">
+								<a href="/detail.html">
+									<h2
+										class="text-lg font-medium uppercase">
+										Peugeot e-2008 Electric
+									</h2>
+								</a>
+								<span
+									class="px-2 rounded-lg poppins-medium flex items-center gap-3"
+									><span
+										class="poppins-medium text-[#444444] line-through"
+										>43 793 $</span
+									><span
+										class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
+										>40 000 $</span
+									></span
+								>
+								<div
+									class="text-[#191A1B] flex items-center gap-4">
+									<span>Sedan</span>
+									<span>2020</span>
+									<span>60000км</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="w-[30%] overflow-hidden rounded-xl flex flex-col shadow-lg">
+							<a
+								href="/detail.html"
+								class="w-full">
+								<img
+									class="h-[160px] w-full object-cover"
+									src="/images/car1.jpg"
+									alt="" />
+							</a>
+							<div class="p-5 flex flex-col gap-3">
+								<a href="/detail.html">
+									<h2
+										class="text-lg font-medium uppercase">
+										Peugeot e-2008 Electric
+									</h2>
+								</a>
+								<span
+									class="px-2 rounded-lg poppins-medium flex items-center gap-3"
+									><span
+										class="poppins-medium text-[#444444] line-through"
+										>43 793 $</span
+									><span
+										class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
+										>40 000 $</span
+									></span
+								>
+								<div
+									class="text-[#191A1B] flex items-center gap-4">
+									<span>Sedan</span>
+									<span>2020</span>
+									<span>60000км</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="w-[30%] overflow-hidden rounded-xl flex flex-col shadow-lg">
+							<a
+								href="/detail.html"
+								class="w-full">
+								<img
+									class="h-[160px] w-full object-cover"
+									src="/images/car1.jpg"
+									alt="" />
+							</a>
+							<div class="p-5 flex flex-col gap-3">
+								<a href="/detail.html">
+									<h2
+										class="text-lg font-medium uppercase">
+										Peugeot e-2008 Electric
+									</h2>
+								</a>
+								<span
+									class="px-2 rounded-lg poppins-medium flex items-center gap-3"
+									><span
+										class="poppins-medium text-[#444444] line-through"
+										>43 793 $</span
+									><span
+										class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
+										>40 000 $</span
+									></span
+								>
+								<div
+									class="text-[#191A1B] flex items-center gap-4">
+									<span>Sedan</span>
+									<span>2020</span>
+									<span>60000км</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="w-[30%] overflow-hidden rounded-xl flex flex-col shadow-lg">
+							<a
+								href="/detail.html"
+								class="w-full">
+								<img
+									class="h-[160px] w-full object-cover"
+									src="/images/car1.jpg"
+									alt="" />
+							</a>
+							<div class="p-5 flex flex-col gap-3">
+								<a href="/detail.html">
+									<h2
+										class="text-lg font-medium uppercase">
+										Peugeot e-2008 Electric
+									</h2>
+								</a>
+								<span
+									class="px-2 rounded-lg poppins-medium flex items-center gap-3"
+									><span
+										class="poppins-medium text-[#444444] line-through"
+										>43 793 $</span
+									><span
+										class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
+										>40 000 $</span
+									></span
+								>
+								<div
+									class="text-[#191A1B] flex items-center gap-4">
+									<span>Sedan</span>
+									<span>2020</span>
+									<span>60000км</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer
+			class="py-5 sm:py-7 md:py-10 lg:py-16 bg-[#F1F1F1]/20 flex items-center justify-center">
+			<div
+				class="flex flex-col items-center gap-5 sm:gap-7 md:gap-10">
+				<h2
+					class="text-center text-lg sm:text-xl md:text-3xl font-semibold uppercase">
+					Хотите ЭКСПОРТИРОВАТЬ МАШИНУ?
+				</h2>
+				<p class="text-[#161616]  md:text-[24px]">
+					Тогда ждем вас
+				</p>
+				<div class="flex items-center gap-10">
+					<a
+						class="hover:bg-gray-300 p-1 rounded-md"
+						target="_blank"
+						href="https://www.instagram.com/gm.motorsint?igsh=ZHNid2M2NHdreWk4&utm_source=qr"
+						><img
+							src="/images/insta.svg"
+							alt="Instagram"
+					/></a>
+					<a
+						class="hover:bg-gray-300 p-1 rounded-md"
+						target="_blank"
+						href="https://t.me/gm_int">
+						<img
+							src="/images/telega.svg"
+							alt="Telegram" />
+					</a>
+					<a
+						class="hover:bg-gray-300 p-1 rounded-md"
+						target="_blank"
+						href="https://wa.me/821076202070">
+						<img
+							src="/images/whatsapp.svg"
+							alt="Whatsapp" />
+					</a>
+				</div>
+			</div>
+		</footer>
+		<script src="/scripts/cars.js"></script>
+	</body>
+</html>
