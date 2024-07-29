@@ -24,7 +24,7 @@
 					class="h-[68px] md:h-[80px] containers flex flex-col">
 					<div
 						class="flex justify-between items-center animated-box relative z-10 h-full">
-						<a href="">
+						<a href="/index.html">
 							<img
 								class="w-[37px] h-[40px]"
 								src="/images/log.svg"
@@ -108,7 +108,7 @@
 			</div>
 		</header>
 		<section
-			class="containers flex flex-col items-center py-20 gap-10">
+			class="containers flex flex-col items-center py-5 sm:py-8 md:py-14 lg:py-20 gap-5 md:gap-10">
 			<p class="w-full">
 				<a
 					class="text-[#8A8A8A]"
@@ -120,57 +120,28 @@
 					href="/cars.html"
 					>Каталог </a
 				>/
-				<strong>
-					2013 Subaru forester premium plus</strong
-				>
+				<strong id="nameautoStrong"> </strong>
 			</p>
-			<div class="flex items-start gap-16">
-				<div class="min-w-[550px]">
+			<div
+				class="w-full flex items-start flex-col md:flex-row gap-5 lg:gap-16">
+				<div
+					class="w-full md:w-1/2 flex flex-col items-center">
 					<a
-						href="https://s3-alpha-sig.figma.com/img/13f6/1549/49f98d7eec5fb2056b08128bb37e5cd2?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ji7U7BBOwGgHMlOEie-xEzwkTmja1H8Lh-vIHsHNUfyLLKzY1DrCncwmqGSgR1djFYXjp9NL2yEIJ0EIWhfJecD5jAWbTW8anbXe9Nsc~~imXrLTfSgg2xxro7GtlKSYA4CCSPXGbIgKPSv6XcuJB028xwOLpYou8E6gL7f5NAYQZ2J~yUag4Qx5rdF31em~5eSt2s5KFiJD7Qw2F2HAhM6eIvupWVsuyJFa9O04OEaZQeeGxNMq60n4OLdK5rjVvuYhjU0Crk9bpY~WLaE-A6Ko1M344~mOcLzB8lxfIqvy2ZZRKbFDKpWhaK-oT9gy10Ooc3S6jvP5oBmWOCXq6A__"
+						class="w-full h-auto rounded-lg overflow-hidden"
+						id="mainImgHref"
+						href=""
 						data-fancybox="gallery"
 						data-caption="Caption #1">
 						<img
 							id="currentImage"
-							class="h-[380px] w-full rounded-lg object-cover"
-							src="https://s3-alpha-sig.figma.com/img/13f6/1549/49f98d7eec5fb2056b08128bb37e5cd2?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ji7U7BBOwGgHMlOEie-xEzwkTmja1H8Lh-vIHsHNUfyLLKzY1DrCncwmqGSgR1djFYXjp9NL2yEIJ0EIWhfJecD5jAWbTW8anbXe9Nsc~~imXrLTfSgg2xxro7GtlKSYA4CCSPXGbIgKPSv6XcuJB028xwOLpYou8E6gL7f5NAYQZ2J~yUag4Qx5rdF31em~5eSt2s5KFiJD7Qw2F2HAhM6eIvupWVsuyJFa9O04OEaZQeeGxNMq60n4OLdK5rjVvuYhjU0Crk9bpY~WLaE-A6Ko1M344~mOcLzB8lxfIqvy2ZZRKbFDKpWhaK-oT9gy10Ooc3S6jvP5oBmWOCXq6A__"
+							class="w-full h-full rounded-lg object-contain"
+							src=""
 							alt="" />
 					</a>
 					<div class="relative overflow-hidden">
 						<div
-							class="thumbnail-container carousel-inner flex items-center justify-between mt-3">
-							<div class="carousel-item">
-								<img
-									src="/images/car1.jpg"
-									class="w-[176px] h-[136px] object-cover rounded-md thumbnail opacity-50"
-									alt="" />
-							</div>
-							<div class="carousel-item">
-								<img
-									src="/images/car2.jpg"
-									class="w-[176px] h-[136px] object-cover rounded-md thumbnail opacity-50"
-									alt="" />
-							</div>
-							<div class="carousel-item">
-								<img
-									src="/images/car3.jpg"
-									class="w-[176px] h-[136px] object-cover rounded-md thumbnail opacity-50"
-									alt="" />
-							</div>
-							<div class="carousel-item">
-								<img
-									src="/images/car4.jpg"
-									class="w-[176px] h-[136px] object-cover rounded-md thumbnail opacity-50"
-									alt="" />
-							</div>
-							<div class="carousel-item">
-								<img
-									src="/images/car5.jpg"
-									class="w-[176px] h-[136px] object-cover rounded-md thumbnail opacity-50"
-									alt="" />
-							</div>
-						</div>
-
+							class="thumbnail-container carousel-inner flex items-center gap-5 mt-3"
+							id="carsCarousel"></div>
 						<button
 							id="prev"
 							class="absolute top-1/2 left-1 transform -translate-y-1/2 bg-gray-800 text-white py-2 px-4 hover:bg-gray-700 rounded-full">
@@ -182,62 +153,19 @@
 							›
 						</button>
 					</div>
-					<div class="hidden">
-						<a
-							href="/images/car1.jpg"
-							data-fancybox="gallery"
-							data-caption="Caption #2">
-							<img
-								src="/images/car1.jpg"
-								class="w-[176px] h-[136px] object-cover rounded-md opacity-50"
-								alt="" />
-						</a>
-						<a
-							href="/images/car2.jpg"
-							data-fancybox="gallery"
-							data-caption="Caption #3">
-							<img
-								src="/images/car2.jpg"
-								class="w-[176px] h-[136px] object-cover rounded-md opacity-50"
-								alt="" />
-						</a>
-						<a
-							href="/images/car3.jpg"
-							data-fancybox="gallery"
-							data-caption="Caption #3">
-							<img
-								src="/images/car3.jpg"
-								class="w-[176px] h-[136px] object-cover rounded-md opacity-50"
-								alt="" />
-						</a>
-						<a
-							href="/images/car4.jpg"
-							data-fancybox="gallery"
-							data-caption="Caption #3">
-							<img
-								src="/images/car4.jpg"
-								class="w-[176px] h-[136px] object-cover rounded-md opacity-50"
-								alt="" />
-						</a>
-						<a
-							href="/images/car5.jpg"
-							data-fancybox="gallery"
-							data-caption="Caption #3">
-							<img
-								src="/images/car5.jpg"
-								class="w-[176px] h-[136px] object-cover rounded-md opacity-50"
-								alt=""
-						/></a>
-					</div>
+					<div
+						class="hidden"
+						id="hiddenCarsImg"></div>
 				</div>
-				<div class="p-5 border w-full rounded-lg">
+				<div
+					class="p-5 border w-full md:w-1/2 rounded-lg">
 					<div class="flex flex-col items-start gap-2">
-						<h2 class="manrope-semibold text-[24px]">
-							2013 Subaru forester premium plus
-						</h2>
+						<h2
+							id="mainName"
+							class="manrope-semibold text-[24px]"></h2>
 						<div
-							class="flex items-center gap-2 text-[#5E5F60]">
-							<span>11 475 Miles</span>
+							class="flex items-center gap-1 lg:gap-2 text-[#5E5F60] text-[15px] lg:text-base">
+							<span id="miles"></span>
 							<svg
 								width="4"
 								height="5"
@@ -250,7 +178,7 @@
 									r="2"
 									fill="#5E5F60" />
 							</svg>
-							<span>Gray</span>
+							<span id="kpp"></span>
 							<svg
 								width="4"
 								height="5"
@@ -263,25 +191,11 @@
 									r="2"
 									fill="#5E5F60" />
 							</svg>
-							<span>AWD</span>
-							<svg
-								width="4"
-								height="5"
-								viewBox="0 0 4 5"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<circle
-									cx="2"
-									cy="2.5"
-									r="2"
-									fill="#5E5F60" />
-							</svg>
-							<span>4 Cylinder Turbo</span>
+							<span id="fluels"></span>
 						</div>
 						<span
 							class="px-[7px] bg-[#C11800] rounded-md text-lg text-white poppins-semibold"
-							>40 000 $</span
-						>
+							id="mainPrice"></span>
 					</div>
 					<h3 class="text-xl manrope-semibold mt-10">
 						Детали :
@@ -292,38 +206,36 @@
 							<span class="manrope-normal text-[#5E5F60]"
 								>Пробег:</span
 							>
-							<span class="manrope-semibold"
-								>3.000 km</span
-							>
-						</div>
-						<div
-							class="border-b flex justify-between items-center pb-1">
-							<span class="manrope-normal text-[#5E5F60]"
-								>Кузов:
-							</span>
-							<span class="manrope-semibold">SUV</span>
+							<span
+								class="manrope-semibold"
+								id="detailMiles"></span>
 						</div>
 						<div
 							class="border-b flex justify-between items-center pb-1">
 							<span class="manrope-normal text-[#5E5F60]"
 								>Объем:</span
 							>
-							<span class="manrope-semibold">None</span>
+							<span
+								class="manrope-semibold"
+								id="detailEngancy"></span>
 						</div>
 						<div
 							class="border-b flex justify-between items-center">
 							<span class="manrope-normal text-[#5E5F60]"
 								>Год выпуска:</span
 							>
-							<span class="manrope-semibold">2023</span>
+							<span
+								class="manrope-semibold"
+								id="detailYear"></span>
 						</div>
 						<div
 							class="border-b flex justify-between items-center pb-1">
 							<span class="manrope-normal text-[#5E5F60]"
 								>Тип топлива:</span
 							>
-							<span class="manrope-semibold"
-								>Электричество
+							<span
+								class="manrope-semibold"
+								id="detailFuel">
 							</span>
 						</div>
 						<div
@@ -331,16 +243,18 @@
 							<span class="manrope-normal text-[#5E5F60]"
 								>ККП:</span
 							>
-							<span class="manrope-semibold"
-								>Автомат</span
-							>
+							<span
+								class="manrope-semibold"
+								id="detailKpp"></span>
 						</div>
 						<div
 							class="border-b flex justify-between items-center pb-1">
 							<span class="manrope-normal text-[#5E5F60]"
-								>Руль:</span
+								>Привод:</span
 							>
-							<span class="manrope-semibold">Левый</span>
+							<span
+								class="manrope-semibold"
+								id="detailPrivod"></span>
 						</div>
 					</div>
 					<button
@@ -390,104 +304,49 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex gap-16 items-center w-full">
-				<div class="min-w-[536px] h-[271px]">
+			<div
+				class="flex gap-16 items-center w-full flex-col lg:flex-row">
+				<div class="sm:min-w-[536px] h-[271px]">
+					<h2
+						class="manrope-semibold text-center mb-4 text-xl md:ext-[22px]">
+						Состояние кузова
+					</h2>
 					<img
+						id="condition"
 						class="w-full h-full object-cover"
-						src="/images/Screenshot.png"
 						alt="" />
 				</div>
-				<div class="w-full border rounded-xl p-10">
-					<h2 class="manrope-semibold text-center">
+				<div
+					class="w-full lg:w-[420px] xl:w-full border rounded-xl p-5 2xl:p-10 overflow-hidden">
+					<h2
+						class="manrope-semibold text-center mb-4 text-xl md:ext-[22px]">
 						Условные обозначения
 					</h2>
 					<div class="relative">
-						<ul class="text-sm manrope-semibold">
-							<li>X – замена элемента</li>
-							<li>TX – трещина, требующая ремонта</li>
-							<li>W – вторичный окрас</li>
-							<li>U – вмятина</li>
-							<li>A – царапина</li>
-							<li>R – скол</li>
-							<li>UR – вмятый скол</li>
-							<li>C – коррозия</li>
-							<li>
-								Е – небольшой эксплуатационный дефект
-							</li>
-							<li>H – отверстие</li>
-							<li>
-								T – мелкий скол, не требующий ремонта
-							</li>
-						</ul>
+						<ul
+							class="text-sm manrope-semibold"
+							id="defektList1"></ul>
 						<img
-							class="absolute top-0 -right-10 h-[250px]"
+							class="absolute top-0 -right-10 h-[250px] hidden sm:block lg:hidden xl:block"
 							src="/images/pngegg.png"
 							alt="" />
 					</div>
 				</div>
 			</div>
 			<div
-				class="bg-[#F7F7F7] rounded-xl py-10 px-20 w-full">
+				class="bg-[#F7F7F7] rounded-xl py-5 md:py-10 px-10 md:px-10 lg:px-20 w-full">
 				<h2
-					class="manrope-semibold text-[24px] text-center">
+					class="manrope-semibold text-xl md:ext-[22px] lg:text-[24px] text-center">
 					Опции
 				</h2>
 				<div
-					class="flex justify-between gap-20 mt-10">
-					<ul class="w-1/2 font-medium list-circle">
-						<li>ABS</li>
-						<li>Bluetooth</li>
-						<li>Cистема обнаружения слепых зон </li>
-						<li>USB</li>
-						<li>Автоматический свет </li>
-						<li>Адаптивная подвеска (ECS) </li>
-						<li>Алюминиевые колесные диски </li>
-						<li>Антипробуксовочная система (TCS) </li>
-						<li>Бесключевой доступ </li>
-						<li>Вентилируемые сиденья передние </li>
-						<li>Датчик давления в шинах (TPMS) </li>
-						<li>Датчик дождя </li>
-						<li>Задняя камера </li>
-						<li>Кожаные сиденья </li>
-						<li>Кондиционер</li>
-						<li>Круиз-контроль </li>
-						<li>Люк</li>
-						<li>Массаж в сиденьях </li>
-						<li>Мультимедиа система с экраном </li>
-						<li>Мультируль</li>
-					</ul>
-					<ul class="w-1/2 font-medium list-circle">
-						<li>Навигация</li>
-						<li>Парктроник</li>
-						<li>Подогрев сидений </li>
-						<li>
-							Подрулевые лепестки переключения передач 
-						</li>
-						<li>Подушки безопасности боковые </li>
-						<li>Подушки безопасности шторки </li>
-						<li>
-							Сиденье с электроприводом водительское 
-						</li>
-						<li>
-							Система предупреждения о выезде из полосы
-							движения (LDWS) 
-						</li>
-						<li>Система стабилизации (ESC) </li>
-						<li>Смарт-ключ </li>
-						<li>Фары HID/LED </li>
-						<li>Центральный замок </li>
-						<li>Электрические стеклоподъемники </li>
-						<li>
-							Электрозатемнение зеркала заднего вида
-							(ЕСМ) 
-						</li>
-						<li>
-							Электронный стояночный тормоз (EPB) 
-						</li>
-						<li>Электропривод багажника </li>
-						<li>Электропривод боковых зеркал </li>
-						<li>Электроусилитель руля </li>
-					</ul>
+					class="flex justify-between lg:gap-20 mt-5 lg:mt-10 flex-col lg:flex-row">
+					<ul
+						class="w-full lg:w-1/2 font-medium list-circle"
+						id="optionAuto1"></ul>
+					<ul
+						class="w-full lg:w-1/2 font-medium list-circle"
+						id="optionAuto2"></ul>
 				</div>
 			</div>
 			<button
@@ -498,389 +357,12 @@
 				class="py-4 sm:py-7 md:py-10 lg:py-10 bg-white flex flex-col overflow-hidden w-full">
 				<h2
 					class="text-[24px] sm:text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-[#C11800]">
-					Лучшие предложения
+					Похожие предложения
 				</h2>
 				<div class="menu ">
 					<div
 						class="menu--wrapper flex gap-7 xl:gap-9 justify-between lg:justfy-center w-full overflow-x-scroll p-10"
-						id="myCar">
-						<div
-							class="rounded-xl shadow-xl min-w-[300px] min-w-[440px] overflow-hidden menu--item">
-							<div
-								class="f-carousel h-[230px]"
-								id="myCarousel">
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/cars.jpeg"
-									alt="" />
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/car1.jpg"
-									alt="" />
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/car2.jpg"
-									alt="" />
-							</div>
-							<div
-								class="p-3 lg:p-4 xl:p-6 flex flex-col gap-6">
-								<h2
-									class="text-xl lg:text-[22px] text-[#191A1B] font-medium">
-									Peugeot e-2008 Electric
-								</h2>
-								<div
-									class="flex items-center justify-between">
-									<span class="text-[#191A1B] "
-										>Sedan</span
-									>
-									<span
-										class="bg-[#F7F7F7] p-2 rounded-lg poppins-medium flex items-center gap-3"
-										><span
-											class="poppins-medium text-[#444444] line-through"
-											>43 793 $</span
-										><span
-											class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
-											>40 000 $</span
-										></span
-									>
-								</div>
-								<div class="flex flex-col gap-3">
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Дата регистрации :
-										</span>
-										<span class="text-sm lg:text-base"
-											>12.12.2024</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Пробег :</span
-										>
-										<span class="text-sm lg:text-base"
-											>45 km</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Мощность :</span
-										>
-										<span class="text-sm lg:text-base"
-											>345 KW (469 PS)</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Коробка :</span
-										>
-										<span class="text-sm lg:text-base"
-											>Automatic</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between mb-4">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Топливо :</span
-										>
-										<span class="text-sm lg:text-base"
-											>Бензин</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div
-							class="rounded-xl shadow-xl min-w-[300px] min-w-[440px] overflow-hidden menu--item">
-							<div
-								class="f-carousel h-[230px]"
-								id="myCarouseler">
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/cars.jpeg"
-									alt="" />
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/car1.jpg"
-									alt="" />
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/car2.jpg"
-									alt="" />
-							</div>
-							<div
-								class="p-3 lg:p-4 xl:p-6 flex flex-col gap-6">
-								<h2
-									class="text-xl lg:text-[22px] text-[#191A1B] font-medium">
-									Peugeot e-2008 Electric
-								</h2>
-								<div
-									class="flex items-center justify-between">
-									<span class="text-[#191A1B] "
-										>Sedan</span
-									>
-									<span
-										class="bg-[#F7F7F7] p-2 rounded-lg poppins-medium flex items-center gap-3"
-										><span
-											class="poppins-medium text-[#444444] line-through"
-											>43 793 $</span
-										><span
-											class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
-											>40 000 $</span
-										></span
-									>
-								</div>
-								<div class="flex flex-col gap-3">
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Дата регистрации :
-										</span>
-										<span class="text-sm lg:text-base"
-											>12.12.2024</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Пробег :</span
-										>
-										<span class="text-sm lg:text-base"
-											>45 km</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Мощность :</span
-										>
-										<span class="text-sm lg:text-base"
-											>345 KW (469 PS)</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Коробка :</span
-										>
-										<span class="text-sm lg:text-base"
-											>Automatic</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between mb-4">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Топливо :</span
-										>
-										<span class="text-sm lg:text-base"
-											>Бензин</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div
-							class="rounded-xl shadow-xl min-w-[300px] min-w-[440px] overflow-hidden menu--item">
-							<div
-								class="f-carousel h-[230px]"
-								id="myCarousel2">
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/cars.jpeg"
-									alt="" />
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/car1.jpg"
-									alt="" />
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/car2.jpg"
-									alt="" />
-							</div>
-							<div
-								class="p-3 lg:p-4 xl:p-6 flex flex-col gap-6">
-								<h2
-									class="text-xl lg:text-[22px] text-[#191A1B] font-medium">
-									Peugeot e-2008 Electric
-								</h2>
-								<div
-									class="flex items-center justify-between">
-									<span class="text-[#191A1B] "
-										>Sedan</span
-									>
-									<span
-										class="bg-[#F7F7F7] p-2 rounded-lg poppins-medium flex items-center gap-3"
-										><span
-											class="poppins-medium text-[#444444] line-through"
-											>43 793 $</span
-										><span
-											class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
-											>40 000 $</span
-										></span
-									>
-								</div>
-								<div class="flex flex-col gap-3">
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Дата регистрации :
-										</span>
-										<span class="text-sm lg:text-base"
-											>12.12.2024</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Пробег :</span
-										>
-										<span class="text-sm lg:text-base"
-											>45 km</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Мощность :</span
-										>
-										<span class="text-sm lg:text-base"
-											>345 KW (469 PS)</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Коробка :</span
-										>
-										<span class="text-sm lg:text-base"
-											>Automatic</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between mb-4">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Топливо :</span
-										>
-										<span class="text-sm lg:text-base"
-											>Бензин</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div
-							class="rounded-xl shadow-xl min-w-[300px] min-w-[440px] overflow-hidden menu--item">
-							<div
-								class="f-carousel h-[230px]"
-								id="myCarousels">
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/cars.jpeg"
-									alt="" />
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/car1.jpg"
-									alt="" />
-								<img
-									class="f-carousel__slide object-cover"
-									src="/images/car2.jpg"
-									alt="" />
-							</div>
-							<div
-								class="p-3 lg:p-4 xl:p-6 flex flex-col gap-6">
-								<h2
-									class="text-xl lg:text-[22px] text-[#191A1B] font-medium">
-									Peugeot e-2008 Electric
-								</h2>
-								<div
-									class="flex items-center justify-between">
-									<span class="text-[#191A1B] "
-										>Sedan</span
-									>
-									<span
-										class="bg-[#F7F7F7] p-2 rounded-lg poppins-medium flex items-center gap-3"
-										><span
-											class="poppins-medium text-[#444444] line-through"
-											>43 793 $</span
-										><span
-											class="px-[7px] bg-[#C11800] rounded-md text-white poppins-medium"
-											>40 000 $</span
-										></span
-									>
-								</div>
-								<div class="flex flex-col gap-3">
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Дата регистрации :
-										</span>
-										<span class="text-sm lg:text-base"
-											>12.12.2024</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Пробег :</span
-										>
-										<span class="text-sm lg:text-base"
-											>45 km</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Мощность :</span
-										>
-										<span class="text-sm lg:text-base"
-											>345 KW (469 PS)</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Коробка :</span
-										>
-										<span class="text-sm lg:text-base"
-											>Automatic</span
-										>
-									</div>
-									<div
-										class="text-lg flex items-center justify-between mb-4">
-										<span
-											class="font-semibold md:text-sm lg:text-base xl:text-lg"
-											>Топливо :</span
-										>
-										<span class="text-sm lg:text-base"
-											>Бензин</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+						id="myCar"></div>
 				</div>
 			</div>
 		</section>
@@ -924,8 +406,8 @@
 			</div>
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="/scripts/detail.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-		<script src="/scripts/detail.js"></script>
 	</body>
 </html>
